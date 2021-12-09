@@ -1,0 +1,114 @@
+body,h1,p{
+	margin:0;
+
+}
+.menu{
+	background:#56caac;
+	margin:0;
+	padding:0;
+}
+.menu:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.menu ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.menu ul li{
+	float:left;
+	position:relative;
+}
+.menu ul li a{
+	color:#FFF;
+	text-decoration:none;
+	text-transform:uppercase;
+	display:inline-block;
+	padding: 22px 14px;
+}
+.menu ul li:hover > a{
+	color: #d7dbdd;
+	background: #34495e;
+	
+}
+/*Drop sown css*/
+.menu ul ul{
+	background:#A37C82;
+	top:150px;
+	left:100%;
+	width:300px;
+	transition:.5s;
+	visibility:hidden;
+	opacity:0;
+	position:absolute;
+	z-index:77;
+
+}
+.menu ul ul li{
+	float:none;
+}
+.menu ul ul li a{
+	
+}
+.menu ul li:hover > ul{
+	color:#FEFAD4;
+	background:#F1828D;
+	visibility:visible;
+	opacity:1;
+	top:100%;
+	left:0;
+}
+.menu ul ul li a{
+	display:block;
+}
+/*Drop down 3*/
+.menu ul ul ul{
+	background:#5d6d7e;
+	top:100%;
+	left:100%;
+	width:300px;
+	position:absolute;
+
+}
+.menu ul ul li:hover > ul{
+	color:#76d7c4;
+	background:#dc7633;
+	visibility:visible;
+	left:100%;
+	
+}
+/*benar area*/
+.benar{
+	width:100%;
+	background-image: radial-gradient( #922b21,#27ae60, #bdc3c7 ,#e67e22,#1f618d);
+	  
+	  
+	  background-image:url('br2.jpg');
+	 
+	 color:#FFF;
+	 padding:300px;
+	 position:relative;
+	z-index:22;
+	
+}
+.benar:after{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background-image: radial-gradient( #922b21,#27ae60, #bdc3c7 ,#e67e22,#1f618d);
+	z-index:-1;
+	opacity:.7;
+	
+}
+h1{
+	font-size:60px;
+}
+p{
+	font-size:40px;
+}
+
